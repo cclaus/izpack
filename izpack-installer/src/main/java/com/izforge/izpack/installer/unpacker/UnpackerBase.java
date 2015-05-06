@@ -438,6 +438,10 @@ public abstract class UnpackerBase implements IUnpacker
                 checkInterrupt();
 
                 listeners.afterPack(pack, i, listener);
+                
+                parsables.clear();
+                executables.clear();
+                updateChecks.clear();
             }
         }
     }
